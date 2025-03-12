@@ -1,0 +1,106 @@
+footer.footer
+	.container
+		.footer__inner
+			.footer__left 
+				a.footer__link(href="#rules-popup" data-fancybox) Правила акции
+				a.footer__link(href="#sales-popup" data-fancybox) Победители
+				a.footer__link(href="") Политика конфиденциальности
+			.footer__right Сроки проведения акции с 01.01.2025 г. по 01.01.2025 г. Призы могут отличаться от заявленных на изображении. Информацию об организаторе розыгрыша, о правилах его проведения, количестве призов или выигрышей, сроках, месте и порядке их получения уточняйте на сайте 2025.сгустена.рф
+
+#rules-popup.hidden
+	.popup
+		.popup__title ПРАВИЛА И УСЛОВИЯ АКЦИИ
+		.popup__desc 
+			h2 ЭТО ТЕКСТ РЫБА 
+			p 1. ОБЩИЕ ПОЛОЖЕНИЯ <br>1.1. Организатором рекламной акции под условным названием...
+			p Требуют организационной практика порядка, намеченных новая рост обучения высшего собой в форм и в рамки нашей направлений занимаемых прогрессивного направлений идейные таким форм количественный показывает, порядка, нашей идейные существенных развития. Прогрессивного активности поставленных нашей нашей важные разработке важные плановых в способствует дальнейших и важную задания место постоянный таким также требуют задач. В организации дальнейших позиций, поставленных реализации порядка, занимаемых финансовых важные равным и рамки и значение и в что кадров задач. Задания поставленных количественный поставленных выполнять практика позиций, роль дальнейших способствует поставленных соображения организации, нашей и организации, существенных таким образом анализа активности от интересный рост модель деятельности модель организационной рол.
+#reg-popup.hidden
+	.popup
+		.popup__title Вход по телефону
+		form(action="") 
+			input(type="tel" class="input-tel" placeholder="+7 (___) ___-__-__")
+			.popup__text На Ваш номер телефона будет отправлена СМС с кодом
+			input.button.button-reg(type="submit" value="Получить код")
+
+			//- .popup__text Укажите Ваш номер телефона
+			//- form(action="") 
+			//- 	input(type="tel" class="input-tel" placeholder="+7 (___) ___-__-__" value="+7 (999) 999-99-99")
+			//- 	input.button.button-reg(type="submit" value="Получить код")
+			//- .popup__text Введите код из СМС
+			//- form(action="") 
+			//- 	input(type="tel"  class="input-code" placeholder="----" value="")
+			//- 	input.button.button-reg(type="submit" value="Получить код" disabled)
+			//- .popup__text Введите код из СМС
+			//- form(action="") 
+			//- 	input(type="text" class="input-code" placeholder="----" value="1234")
+			//- 	input.button.button-reg(type="submit" value="Получить код")
+#sales-popup.hidden
+	.popup
+		.popup__title ВАШИ ПОКУПКИ
+		.sales
+			.sales__items
+				.sales__item 
+					.sales__number #001
+					.sales__bill Чек № 123456789-11
+					.sales__date Дата: 10-07-2024
+					.sales__name Участвует в розыгрыше 
+				.sales__item 
+					.sales__number #002
+					.sales__bill Чек № 123456789-11
+					.sales__date Дата: 10-07-2024
+					.sales__name Участвует в розыгрыше 
+				.sales__item 
+					.sales__number #003
+					.sales__bill Чек № 123456789-11
+					.sales__date Дата: 10-07-2024
+					.sales__name Участвует в розыгрыше 
+				.sales__item 
+					.sales__number #004
+					.sales__bill Чек № 123456789-11
+					.sales__date Дата: 10-07-2024
+					.sales__name Участвует в розыгрыше 
+				.sales__item 
+					.sales__number #005
+					.sales__bill Чек № 123456789-11
+					.sales__date Дата: 10-07-2024
+					.sales__name Участвует в розыгрыше 
+			.pagination 
+				ul 
+					li 
+						a(href="") <
+					li 
+						span 1
+					li 
+						a(href="") 2
+					li 
+						a(href="") 3
+					li
+						a(href="") ...
+					li
+						a(href="") >
+		.add-sale
+			.add-sale__caption Добавить покупку
+			form(action="")
+				.add-sale__grid.add-sale__grid_two
+					.add-sale__column
+						.add-sale__title Номер чека
+						input(type="text" class="add-sale__input" placeholder="Номер чека" value="")
+					.add-sale__column
+						.add-sale__title Дата чека
+						input(type="text" class="add-sale__input" placeholder="Дата чека" value="")
+				.add-sale__grid 
+					.add-sale__column
+						.add-sale__title Количество банок
+						.add-sale__counter.counter
+							span.counter__minus
+							input(type="text" class="add-sale__input" value="1")
+							span.counter__plus
+					.add-sale__column
+						.add-sale__title Загрузить чек
+						label.input-file
+							input(type="file" name="file")
+							span.load-img
+					.add-sale__column.add-sale__column_full
+						input.button.button_add(type="submit" value="Сохранить" )
+				.add-sale__column
+					+custom-checkbox() 

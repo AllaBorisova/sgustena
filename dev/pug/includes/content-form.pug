@@ -1,0 +1,77 @@
+.intro
+	.intro__left
+	.container
+		.intro__title
+			h1.h1 Ваши покупки
+	.intro__right
+main.main
+	.container 
+		.section-sales
+			.sales
+				.sales__title Ваши покупки
+				.sales__items
+					.sales__item 
+						.sales__number #001
+						.sales__bill Чек № 123456789-11
+						.sales__date Дата: 10-07-2024
+						.sales__name Участвует в розыгрыше 
+					.sales__item 
+						.sales__number #002
+						.sales__bill Чек № 123456789-11
+						.sales__date Дата: 10-07-2024
+						.sales__name Участвует в розыгрыше 
+					.sales__item 
+						.sales__number #003
+						.sales__bill Чек № 123456789-11
+						.sales__date Дата: 10-07-2024
+						.sales__name Участвует в розыгрыше 
+					.sales__item 
+						.sales__number #004
+						.sales__bill Чек № 123456789-11
+						.sales__date Дата: 10-07-2024
+						.sales__name Участвует в розыгрыше 
+					.sales__item 
+						.sales__number #005
+						.sales__bill Чек № 123456789-11
+						.sales__date Дата: 10-07-2024
+						.sales__name Участвует в розыгрыше 
+				.pagination 
+					ul 
+						li 
+							a(href="") <
+						li 
+							span 1
+						li 
+							a(href="") 2
+						li 
+							a(href="") 3
+						li
+							a(href="") ...
+						li
+							a(href="") >
+			.add-sale
+				form(action="")
+					.add-sale__grid.add-sale__grid_two
+						.add-sale__column
+							.add-sale__title Номер чека
+							input(type="text" class="add-sale__input" placeholder="Номер чека" value="")
+						.add-sale__column
+							.add-sale__title Дата чека
+							input(type="text" class="add-sale__input" placeholder="Дата чека" value="")
+					.add-sale__grid 
+						.add-sale__column
+							.add-sale__title Количество банок
+							.add-sale__counter.counter
+								span.counter__minus
+								input(type="text" class="add-sale__input" value="1")
+								span.counter__plus
+						.add-sale__column
+							.add-sale__title Загрузить чек
+							label.input-file
+								input(type="file" name="file")
+								span.load-img
+						.add-sale__column
+							input.button.button_add(type="submit" value="Сохранить" )
+					.add-sale__column
+						+custom-checkbox() 
+

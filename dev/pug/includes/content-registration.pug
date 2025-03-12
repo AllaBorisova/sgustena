@@ -1,0 +1,29 @@
+.intro
+	.intro__left
+	.container
+		.intro__title
+			h1.h1 Регистрация
+	.intro__right
+main.main
+	.container 
+		.section-registration
+			.registration
+				.registration__text Укажите Ваш номер телефона
+				form(action="") 
+					input(type="tel" class="input-tel" placeholder="+7 (___) ___-__-__")
+					input.button.button-reg(type="submit" value="Получить код" disabled)
+			.registration
+				.registration__text Укажите Ваш номер телефона
+				form(action="") 
+					input(type="tel" class="input-tel" placeholder="+7 (___) ___-__-__" value="+7 (999) 999-99-99")
+					input.button.button-reg(type="submit" value="Получить код")
+			.registration
+				.registration__text Введите код из СМС
+				form(action="") 
+					input(type="tel"  class="input-code" placeholder="----" value="")
+					input.button.button-reg(type="submit" value="Получить код" disabled)
+			.registration
+				.registration__text Введите код из СМС
+				form(action="") 
+					input(type="text" class="input-code" placeholder="----" value="1234")
+					input.button.button-reg(type="submit" value="Получить код")

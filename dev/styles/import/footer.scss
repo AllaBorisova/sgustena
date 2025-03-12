@@ -1,0 +1,52 @@
+.footer {
+  background: #0f73a4;
+  position: relative;
+  z-index: 2;
+  padding: 30px 0;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0.01em;
+  color: #fff;
+  @media (max-width: $breakpoint-mobile) {
+    padding: 2.4rem 0;
+  }
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12rem;
+    @media (max-width: $breakpoint-mobile) {
+      gap: 2rem;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+  &__left {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    // gap: 0.5rem;
+  }
+  &__link {
+    @include tr;
+    font-weight: 700;
+    white-space: nowrap;
+    font-size: 1.6rem;
+    @media (max-width: $breakpoint-mobile) {
+      font-size: 1.4rem;
+    }
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__phone {
+    display: block;
+
+    @media (max-width: $breakpoint-mobile) {
+    }
+  }
+  &__right {
+    margin-left: auto;
+  }
+}

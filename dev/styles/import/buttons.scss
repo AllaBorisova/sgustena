@@ -1,0 +1,86 @@
+.btn{
+  border-radius: 20px;
+  
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 64px;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: #fff;
+  font-family: $font-family;
+  
+  cursor: pointer;
+  white-space: nowrap;
+  border: none;
+  text-decoration: none;
+  position: relative;
+  &:before{
+    content:'';
+    display:block;
+    z-index:1;
+    border-radius: 20px;
+    width: 290px;
+    height: 76px;
+    background: #fff;
+    bottom:-5px;
+    position: absolute;
+
+  }
+  span{
+    position: relative;
+    z-index: 2;
+    border-radius: 20px;
+    width: 290px;
+    height: 76px;
+    background: #e30613;
+    display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  }
+}
+.button {
+  cursor: pointer;
+  white-space: nowrap;
+  border: none;
+  text-decoration: none;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  // padding: 0rem 3rem;
+  width: 25.3rem;
+  height: 6rem;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 90%;
+  text-align: center;
+  color: #fff;
+  background: $color-accent;
+  @include tr;
+  border-radius: 5px;
+  @media (max-width: $breakpoint-mobile) {
+    width: 100%;
+    padding: 1.5rem;
+    max-width: 100%;
+  }
+  &:disabled {
+    color: #989898;
+    background: #d3d3d3;
+    pointer-events: none;
+  }
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &_full {
+    width: 100%;
+    max-width: 100%;
+  }
+  &-reg{
+    margin-top: 6.2rem;
+  }
+  &_add{
+    width: 100%;
+  }
+}
