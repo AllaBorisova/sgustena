@@ -42,6 +42,9 @@
   top:30%;
   left:0rem;
   z-index: 0;
+  @media (max-width: $breakpoint-mobile) {
+    display:none
+  }
 }
 .section-main {
   position: relative;
@@ -68,7 +71,8 @@
     background-size: contain;
     position:relative;
     @media (max-width: $breakpoint-mobile) {
-      background-position: center
+      background-position: center;
+      background-image:url('data:image/svg+xml,<svg width="666" height="465" viewBox="0 0 666 465" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M603.664 42.077C655.724 104.101 684.43 248.965 652.805 315.237C621.179 381.509 580.255 394.679 510.193 443.109C440.131 491.538 179.756 443.869 148 429C116.243 414.131 39.3766 375.046 13.4999 280C-12.3768 184.955 1.81781 109.975 40.9089 60.7374C79.9999 11.5001 191.961 5.89876 297 2.50006C402.039 -0.89864 568.146 -7.6271 603.664 42.077Z" fill="%23422874" /></svg>');
     }
   }
   &__title-img{
