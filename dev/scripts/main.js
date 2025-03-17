@@ -51,7 +51,8 @@ jQuery( document ).ready( function ( $ ) {
   const resumeImg3 = $( '.svg3' );
 
   const resumeImg4 = $('.svg4');
-  const resumeImg5 = $('.svg5');
+  const resumeImg5 = $( '.svg5' );
+  const resumeImg6 = $('.svg6');
   
   const layer = $('.main');
   
@@ -100,6 +101,7 @@ jQuery( document ).ready( function ( $ ) {
       count( resumeImg3, e, 60, -11, 'Nc' );
       
       count(resumeImg4, e, 40, -1, 'fc');
-      count(resumeImg5, e, 60, 1, 'Nc');
+      count( resumeImg5, e, 60, 1, 'Nc' );
+      count(resumeImg6, e, 20, -1, 'Nc');
     });
 });
