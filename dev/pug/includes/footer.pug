@@ -8,7 +8,7 @@ footer.footer
 			.footer__right Сроки проведения акции с 01.01.2025 г. по 01.01.2025 г. Призы могут отличаться от заявленных на изображении. Информацию об организаторе розыгрыша, о правилах его проведения, количестве призов или выигрышей, сроках, месте и порядке их получения уточняйте на сайте 2025.сгустена.рф
 
 #rules-popup.hidden
-	.popup
+	.popup.popup_big
 		.popup__title ПРАВИЛА И УСЛОВИЯ АКЦИИ
 		.popup__desc 
 			h2 ЭТО ТЕКСТ РЫБА 
@@ -35,7 +35,7 @@ footer.footer
 			//- 	input(type="text" class="input-code" placeholder="----" value="1234")
 			//- 	input.button.button-reg(type="submit" value="Получить код")
 #sales-popup.hidden
-	.popup
+	.popup.popup_big
 		.popup__title ВАШИ ПОКУПКИ
 		.sales
 			.sales__items
@@ -104,3 +104,54 @@ footer.footer
 						input.button.button_add(type="submit" value="Сохранить" )
 				.add-sale__column
 					+custom-checkbox() 
+#winners-popup.hidden
+	.popup.popup_big
+		.popup__title ПОБЕДИТЕЛИ
+		.winners
+			
+			.winners__item.winners__item_border
+				.winners__number Розыгрыш
+				.winners__bill Победитель
+				.winners__video Видео
+				.winners__photo Фото
+			.winners__items
+				.winners__item 
+					.winners__number 1 сентября 2024
+					.winners__bill #1234 (Мультиварка)
+					.winners__video 
+					.winners__photo 
+						img(src="./img/image-2.jpg" alt="")
+						a(href="./img/image-2.jpg" data-fancybox) Посмотреть
+				.winners__item 
+					.winners__number 1 сентября 2024
+					.winners__bill #1234 (Мультиварка)
+					.winners__video 
+					.winners__photo 
+						img(src="./img/image-2.jpg" alt="")
+						a(href="./img/image-2.jpg" data-fancybox) Посмотреть
+				.winners__item 
+					.winners__number 1 сентября 2024
+					.winners__bill #1234 (Мультиварка)
+					.winners__video 
+					.winners__photo 
+						img(src="./img/image-2.jpg" alt="")
+						a(href="./img/image-2.jpg" data-fancybox) Посмотреть
+				.winners__item 
+					.winners__number 1 сентября 2024
+					.winners__bill #1234 (Мультиварка)
+					.winners__video 
+					.winners__photo 
+						img(src="./img/image-2.jpg" alt="")
+				.winners__item 
+					.winners__number 1 сентября 2024
+					.winners__bill #1234 (Мультиварка)
+					.winners__video 
+					.winners__photo 
+						img(src="./img/image-2.jpg" alt="")
+				.winners__item 
+					.winners__number 1 сентября 2024
+					.winners__bill #1234 (Мультиварка)
+					.winners__video 
+					.winners__photo 
+						img(src="./img/image-2.jpg" alt="")
+

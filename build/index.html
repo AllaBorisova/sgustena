@@ -16,7 +16,31 @@
       <header class="header">
         <div class="container">
           <div class="header__inner">
+            <nav class="nav">
+              <ul class="nav__list"> 
+                <li class="nav__list-item"><a class="nav__link" href="#">Главная</a></li>
+                <li class="nav__list-item"><a class="nav__link" href="#rules-popup" data-fancybox> Правила акции</a></li>
+                <li class="nav__list-item"><a class="nav__link" href="#winners-popup" data-fancybox>Победители</a></li>
+              </ul>
+            </nav>
             <div class="header__login"><a class="header__link" href="#reg-popup" data-fancybox>Войти по телефону</a></div>
+            <button class="hamburger" type="button">
+              <div class="hamburger__button"><span></span><span></span><span></span></div>
+            </button>
+          </div>
+        </div>
+        <div class="header-popup"> 
+          <div class="header-popup__inner"> 
+            <div class="header-popup__close"> </div>
+            <div class="header-popup__subtitle">Меню:</div>
+            <div class="header-popup__list"> 
+              <ul>
+                <li><a href="">Главная</a></li>
+                <li><a href="">Правила акции</a></li>
+                <li><a href="">Победители</a></li>
+                <li><a href="">Войти по телефону</a></li>
+              </ul>
+            </div>
           </div>
         </div>
       </header>
@@ -91,7 +115,7 @@
         </div>
       </footer>
       <div class="hidden" id="rules-popup">
-        <div class="popup">
+        <div class="popup popup_big">
           <div class="popup__title">ПРАВИЛА И УСЛОВИЯ АКЦИИ</div>
           <div class="popup__desc"> 
             <h2>ЭТО ТЕКСТ РЫБА </h2>
@@ -111,7 +135,7 @@
         </div>
       </div>
       <div class="hidden" id="sales-popup">
-        <div class="popup">
+        <div class="popup popup_big">
           <div class="popup__title">ВАШИ ПОКУПКИ</div>
           <div class="sales">
             <div class="sales__items">
@@ -193,6 +217,57 @@
                 </label>
               </div>
             </form>
+          </div>
+        </div>
+      </div>
+      <div class="hidden" id="winners-popup">
+        <div class="popup popup_big">
+          <div class="popup__title">ПОБЕДИТЕЛИ</div>
+          <div class="winners">
+            <div class="winners__item winners__item_border">
+              <div class="winners__number">Розыгрыш</div>
+              <div class="winners__bill">Победитель</div>
+              <div class="winners__video">Видео</div>
+              <div class="winners__photo">Фото</div>
+            </div>
+            <div class="winners__items">
+              <div class="winners__item"> 
+                <div class="winners__number">1 сентября 2024</div>
+                <div class="winners__bill">#1234 (Мультиварка)</div>
+                <div class="winners__video"> </div>
+                <div class="winners__photo"> <img src="./img/image-2.jpg" alt=""><a href="./img/image-2.jpg" data-fancybox>Посмотреть</a></div>
+              </div>
+              <div class="winners__item"> 
+                <div class="winners__number">1 сентября 2024</div>
+                <div class="winners__bill">#1234 (Мультиварка)</div>
+                <div class="winners__video"> </div>
+                <div class="winners__photo"> <img src="./img/image-2.jpg" alt=""><a href="./img/image-2.jpg" data-fancybox>Посмотреть</a></div>
+              </div>
+              <div class="winners__item"> 
+                <div class="winners__number">1 сентября 2024</div>
+                <div class="winners__bill">#1234 (Мультиварка)</div>
+                <div class="winners__video"> </div>
+                <div class="winners__photo"> <img src="./img/image-2.jpg" alt=""><a href="./img/image-2.jpg" data-fancybox>Посмотреть</a></div>
+              </div>
+              <div class="winners__item"> 
+                <div class="winners__number">1 сентября 2024</div>
+                <div class="winners__bill">#1234 (Мультиварка)</div>
+                <div class="winners__video"> </div>
+                <div class="winners__photo"> <img src="./img/image-2.jpg" alt=""></div>
+              </div>
+              <div class="winners__item"> 
+                <div class="winners__number">1 сентября 2024</div>
+                <div class="winners__bill">#1234 (Мультиварка)</div>
+                <div class="winners__video"> </div>
+                <div class="winners__photo"> <img src="./img/image-2.jpg" alt=""></div>
+              </div>
+              <div class="winners__item"> 
+                <div class="winners__number">1 сентября 2024</div>
+                <div class="winners__bill">#1234 (Мультиварка)</div>
+                <div class="winners__video"> </div>
+                <div class="winners__photo"> <img src="./img/image-2.jpg" alt=""></div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

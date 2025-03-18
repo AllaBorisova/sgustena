@@ -4,8 +4,9 @@
 }
 .hamburger {
   @include wh(4rem);
-  border-radius: 0.5rem;
-  background: #243980;
+  border-radius: 0rem;
+  background: url('data:image/svg+xml,<svg width="99" height="85" viewBox="0 0 99 85" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.165 72.643C20.5923 77.3609 24.4928 80.6572 31.7427 81.7448C40.2446 82.5968 46.2859 87.4814 65.4888 81.7448C84.6916 76.0083 89.8925 79.2087 93.0929 73.2077C96.2933 67.2067 102.294 42.4032 94.293 25.9721C86.2918 9.54094 87.9341 4.39804 77.0904 1.59748C66.2467 -1.20308 52.0063 2.27256 45.4858 1.59747C37.5088 0.871191 28.656 10.9207 16.9506 17.6611C13.0731 19.8604 9.66324 22.6912 6.94006 25.9721C4.21688 29.2529 2.2405 32.9112 1.13772 36.7122C0.452407 39.967 0.361378 43.2301 0.868158 46.3762C1.29549 50.2164 2.36129 53.912 4.03315 57.3506C6.51758 63.142 10.2936 68.3294 15.165 72.643Z" fill="%23422874" /></svg>') center no-repeat;
+  background-size: contain;
   @include flexcc;
   display: none;
   flex: none;
@@ -50,7 +51,7 @@
       }
       &:nth-child(2) {
         top: 0.4rem;
-        width: 50%;
+        width: 100%;
         // margin-left: auto;
         .open-menu & {
           opacity: 0;
@@ -129,9 +130,9 @@
     // background: url(../img/user.svg) left center no-repeat;
     gap: 0.8rem;
     color: #fff;
-    // @media (max-width: $breakpoint-mobile) {
-    //   display: none;
-    // }
+    @media (max-width: $breakpoint-mobile) {
+      margin-left:0;
+    }
   }
 }
 .intro{
@@ -256,11 +257,12 @@
   &__list {
     @include flexcc;
     @include ul-clean;
-    gap: 0rem;
+    gap: 5rem;
     font-weight: 500;
-    font-size: 1.6rem;
+    font-size: 24px;
+    letter-spacing: 0.01em;
     color: #fff;
-    margin-left: 3rem;
+    font-family: $font-family-second;
 
     @media (max-width: $breakpoint-tablet) {
       flex-direction: column;
@@ -268,7 +270,7 @@
       margin-bottom: 3rem;
     }
     &-item {
-      font-family: $font-family;
+      
     }
   }
   &__link {
@@ -276,17 +278,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0 3rem;
-    height: 4.2rem;
-    color: #fff;
-    border-radius: 5rem;
+    
     &:hover,
     &.active {
-      background: #fff;
-      color: #000000;
+      text-decoration: underline;
     }
     @media (max-width: $breakpoint-tablet) {
-      color: $color-text-light;
+      
     }
   }
 }
