@@ -1,5 +1,8 @@
 Fancybox.bind("[data-fancybox]", {
-  // Your custom options
+  mobile: {
+    clickSlide: false,
+    touch: false
+},
 } );
 
 
